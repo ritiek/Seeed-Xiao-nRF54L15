@@ -3,6 +3,7 @@ build/
 build_xiao/
 # Logs
 *.log
+.cache
 
 # Python
 __pycache__/
@@ -31,6 +32,17 @@ blink_hpf/
 reference/
 board_config_template.overlay
 hpf.rst
+
+# West workspace (keep .west/config for non-standard layout)
+.west/*
+!.west/config
+.zephyr/
+modules/
+tools/
+bootloader/
+
+# Nix
+.direnv
 
 # Ignore submodule local changes
 lib/flatbuffers
