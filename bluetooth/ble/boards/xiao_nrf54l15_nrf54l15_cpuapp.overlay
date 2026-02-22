@@ -1,18 +1,9 @@
 // XIAO nRF54L15 BLE Sample Device Tree Overlay
-// Enables Bluetooth hardware and GPIO for LED contro;l
+// Enables Bluetooth hardware and GPIO for LED control
 
 / {
 	aliases {
-		led0 = &led0;
 		sw0 = &button0;
-	};
-
-	leds {
-		compatible = "gpio-leds";
-		led0: led_0 {
-			gpios = <&gpio2 1 GPIO_ACTIVE_HIGH>;
-			label = "User LED";
-		};
 	};
 
 	buttons {
